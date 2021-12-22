@@ -159,10 +159,15 @@ body.scale-cv {
   margin-top: 0.22rem;
 }
 
-.scale-cv .education__line,
-.scale-cv .experience__line{
+.scale-cv .education__line{
   width: 1px;
   height: 110%;
+  transform: translate(5px, 0);
+}
+
+.scale-cv .experience__line{
+  width: 1px;
+  height: 102%;
   transform: translate(5px, 0);
 }
 
@@ -444,11 +449,18 @@ img {
   margin-top: 0.25rem;
 }
 
-.education__line,
-.experience__line {
+.education__line{
   display: flex;
   width: 2px;
   height: 110%;
+  background-color: var(--text-color-light);
+  transform: translate(7px, 0);
+}
+
+.experience__line{
+  display: flex;
+  width: 2px;
+  height: 105%;
   background-color: var(--text-color-light);
   transform: translate(7px, 0);
 }
@@ -480,19 +492,24 @@ img {
   justify-content: space-between;
 }
 
-.skills__content,
-.languages__content {
+.skills__content{
   gap: 1.5rem;
   padding: 25px 0;
   border-bottom: 0px;
   justify-content: space-between;
 }
 
+.languages__content{
+  gap: 0.5rem;
+  border-bottom: 0px;
+}
+
+
 .skills__name,
 .languages__name {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
 }
 
 .skills__circle,
@@ -633,7 +650,7 @@ img {
 
   .languages__container {
     grid-template-columns: repeat(3, max-content);
-    column-gap: 3.5rem;
+    column-gap: 3rem;
   }
 
   .interests__container {
